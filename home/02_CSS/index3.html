@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .flex-row {
+        display: flex;
+        flex-direction: row;			
+    }
+    .flex-row .one-flex {
+        background-color: lightgrey;
+        flex: 0 0 15em;
+        align-self: flex-start;
+        margin-bottom: .2em;
+    
+    }
+    .flex-row .two-flex {
+        flex: 1 1 auto;
+    }
+    .two-flex div {
+        margin-bottom: .2em;
+        background-color: grey;
+        overflow: hidden;
+    }
+    .footer {background-color: lightgrey;}
+    img {float: right;
+        height: 80px;
+    }
+    
+
+
+</style>
+<body>
+    <div class="flex-container">
+		<div class="flex-row">
+			<div class="one-flex">
+				<h3>Блок навигации</h3>
+		  			<ul>
+		  				<li>Ширина 15em</li>
+		  				<li>Высота определяется контентом</li>
+						<li>Должен присутствовать цвет фона</li>
+						<li>Располагается слева</li>
+						<li>Блок навигации наполните контентом достаточным,чтобы по высоте он начинал захватывать вторую статью, как показано в данном примере</li>
+		  			</ul>
+			</div>
+			<div class="two-flex">
+				<div>
+					<h3>Статья 1</h3>
+		  			Размер блока:<br>
+		  			Занимает всю доступную ширину<br>
+		  			Высота по размеру контента<br>
+		  			Должен присутствовать цвет фона<br>
+		  			Во всех "статьях" сделайте отступ снизу от соседей равным .2em, при помощи свойства margin-bottom
+				</div>
+				<div>
+					<h3>Статья 2</h3>
+		  			Размер блока:<br>
+		  			Занимает всю доступную ширину<br>
+		  			Высота по размеру контента<br>
+		  			Должен присутствовать цвет фона<br>
+		  			Во всех "статьях" сделайте отступ снизу от соседей равным .2em, при помощи свойства margin-bottom Картинка вставлена при помощи тега, плавание организовано по правому краю внутри данной статьи для этой картинки.
+		  			<img src="mail.png" alt="mail">
+				</div>
+			</div>
+		</div>
+		<div class="footer">Нижний блок, подвал. Занимает всю доступную ширину. Высота определяется помещенным внутрь контентом.</div>
+	</div>
+</body>
+</html>
