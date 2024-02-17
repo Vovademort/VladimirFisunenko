@@ -1,0 +1,56 @@
+div.Days {  
+    display: flex;
+}
+div.Days > div {  
+    background-color: lightgray;
+    width: 160px;
+    border: solid gray 3px; 
+    border-radius: 10px; 
+    position: relative; 
+    cursor: pointer 
+}
+div.Food { 
+    display: none;
+}
+div.Days > div { 
+    width: 150px;
+    border: solid gray 2px; 
+    border-radius: 10px; 
+    cursor: pointer 
+}
+div.Days > div:hover div.Food { 
+    display: block; 
+    position: absolute; 
+    left: 0%; 
+    top: 130%; 
+    z-index: 1
+}
+@media (max-width: 998px) {
+    div.Days {  
+    display: block;
+}
+div.Food > div {  
+    background-color: lightgray;
+    width: 160px;
+    border: solid gray 3px; 
+    border-radius: 10px; 
+    position: relative; 
+    cursor: pointer 
+}
+div.Food { 
+    display: none;
+}
+div.Food > div { 
+    width: 150px;
+    border: solid gray 2px; 
+    border-radius: 10px; 
+    cursor: pointer 
+}
+div.Days > div:hover div.Food { 
+    display: flex; 
+    position: absolute; 
+    left: 100%; 
+    top: 0%; 
+    z-index: 1
+}
+}
